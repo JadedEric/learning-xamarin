@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:calculator_exercise"
+             x:Class="calculator_exercise.MainPage"
+             BackgroundColor="#354242">
+
+    <StackLayout VerticalOptions="Center">
+
+        <Grid Padding="40" RowSpacing="10" ColumnSpacing="10">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Text="1234" x:Name="PhoneNumberLabel" TextColor="White" HorizontalTextAlignment="Center" Grid.ColumnSpan="3" FontSize="50" />
+
+            <Button Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" Text="1" FontSize="30" TextColor="#28282c" BackgroundColor="White" BorderRadius="30" />
+            <Button Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" Text="2" FontSize="30" TextColor="#28282c" BackgroundColor="White" BorderRadius="30" />
+            <Button Grid.Row="1" Grid.Column="2" HorizontalOptions="Center" Text="3" FontSize="30" TextColor="#28282c" BackgroundColor="White" BorderRadius="30" />
+
+            <Button Grid.Row="2" Grid.Column="0" HorizontalOptions="Center" Text="4" FontSize="30" TextColor="#28282c" BackgroundColor="White" BorderRadius="30" />
+            <Button Grid.Row="2" Grid.Column="1" HorizontalOptions="Center" Text="5" FontSize="30" TextColor="#28282c" BackgroundColor="White" BorderRadius="30" />
+            <Button Grid.Row="2" Grid.Column="2" HorizontalOptions="Center" Text="6" FontSize="30" TextColor="#28282c" BackgroundColor="White" BorderRadius="30" />
+
+            <Button Grid.Row="3" Grid.Column="0" HorizontalOptions="Center" Text="7" FontSize="30" TextColor="#28282c" BackgroundColor="White" BorderRadius="30" />
+            <Button Grid.Row="3" Grid.Column="1" HorizontalOptions="Center" Text="8" FontSize="30" TextColor="#28282c" BackgroundColor="White" BorderRadius="30" />
+            <Button Grid.Row="3" Grid.Column="2" HorizontalOptions="Center" Text="9" FontSize="30" TextColor="#28282c" BackgroundColor="White" BorderRadius="30" />
+
+            <Button Grid.Row="4" Grid.Column="0" HorizontalOptions="Center" Grid.ColumnSpan="3" Text="0" FontSize="30" TextColor="#28282c" BackgroundColor="White" BorderRadius="30" />
+
+            <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" FontSize="30" BackgroundColor="#96ca2d" Text="Dial" />
+
+        </Grid>
+        
+    </StackLayout>
+    
+</ContentPage>
